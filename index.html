@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="#" class="logo">
+                Aula Navbar
+            </a>
+        </div>
+        <div class="navbar-items">
+            <a href="#" class="menu" onclick="myFunction()">
+                <i class="material-icons">menu</i>
+            </a>
+            <div class="menu-items">
+                <a href="#" class="navbar-item">
+                    Marcelino
+                </a>
+                <a href="#" class="navbar-item">
+                    Ravy
+                </a>
+                <a href="#" class="navbar-item">
+                    Ju
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function myFunction() {
+            var navbar = document.querySelector(".navbar");
+            var menuItems = document.querySelector(".menu-items");
+            if (navbar.className === "navbar") {
+                navbar.className += " responsive";
+                menuItems.className += " responsive";
+            } else {
+                navbar.className = "navbar";
+                menuItems.className = "menu-items";
+            }
+        }
+    </script>
+</body>
+
+</html>
